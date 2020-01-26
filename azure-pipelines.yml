@@ -8,7 +8,7 @@ variables:
    major: 1
    minor: 0
 
-name: $(major).$(minor)-$(date:yyyyMMdd)$(Rev:.r)
+name: $(major).$(minor)$(Rev:.r)
 
 steps:
 - task: NodeTool@0
