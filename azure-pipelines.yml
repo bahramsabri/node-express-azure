@@ -4,6 +4,12 @@ trigger:
 pool:
   vmImage: 'Ubuntu-16.04'
 
+variables:
+   major: 1
+   minor: 1
+
+name: $(major).$(minor).$(date:yy)$(DayOfYear)$(Rev:.r)
+
 steps:
 - task: NodeTool@0
   inputs:
